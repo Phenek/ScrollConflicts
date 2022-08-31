@@ -8,12 +8,15 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 
-		_carouselView.ItemsSource = new List<int> { 1, 2, 3 };
-        _carouselView.ItemTemplate = new TabTemplateSelector
+        Content = new CarouselView
         {
-            Tab1 = new DataTemplate(() => new Tab1()),
-            Tab2 = new DataTemplate(() => new Tab2()),
-            Tab3= new DataTemplate(() => new Tab3())
+            ItemTemplate = new TabTemplateSelector
+            {
+                Tab1 = new DataTemplate(() => new Tab1()),
+                Tab2 = new DataTemplate(() => new Tab2()),
+                Tab3 = new DataTemplate(() => new Tab3())
+            },
+            ItemsSource = new List<int> { 1, 2, 3 }
         };
 	}
 

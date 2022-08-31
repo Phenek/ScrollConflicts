@@ -5,8 +5,6 @@
              xmlns:v="clr-namespace:ScrollConflicts"
              x:Class="ScrollConflicts.MainPage"
              Title="ScrollConflicts">
-			 
-    <CarouselView x:Name="_carouselView"/>
  
 </ContentPage>
 
